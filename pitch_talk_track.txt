@@ -1,0 +1,25 @@
+SNAPDRAGON SENSE — PITCH TALK TRACK
+
+Slide 1 — Snapdragon Sense
+Snapdragon Sense is a prototype concept for helping laptop users understand common problems and choose safer next steps. It is intended for future optimization on Snapdragon-powered HP PCs.
+
+Slide 2 — Problem
+When a laptop drains battery quickly, slows down, freezes, or has an app issue, people often face technical details and generic advice. They may not know which evidence matters or what to check first.
+
+Slide 3 — Solution
+The user describes a symptom and optional details. The app gives a cautious initial assessment and low-risk checks. An optional local open-source model can explain the guidance in simple language. It does not silently monitor the device or make system changes.
+
+Slide 4 — Demo
+The current demo uses user-entered details or clearly labelled sample data. It demonstrates the interaction, not live hardware diagnosis. The user sees possible causes, next steps, and limitations.
+
+Slide 5 — Architecture
+The Streamlit interface passes user-provided details to guided logic. If Ollama is configured, the prompt goes to a local model on the same machine. A guided fallback works without a model. No remote AI API is used by this prototype.
+
+Slide 6 — Snapdragon fit
+The design is intended for future on-device deployment on Snapdragon-powered HP PCs. Local inference may reduce dependence on cloud services. Actual model support, NPU use, speed, and power impact must be validated on Snapdragon hardware.
+
+Slide 7 — Trust
+The prototype is careful about uncertainty. It does not claim to read live telemetry, confirm application compatibility, or repair a system. Suggestions are advisory and no settings are changed.
+
+Slide 8 — Next steps
+Validate the guidance, add permission-based diagnostic sources, select a model from Qualcomm AI Hub or an open-source platform, and test the full pipeline on Snapdragon-powered HP hardware with repeatable measurements.
